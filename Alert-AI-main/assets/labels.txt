@@ -1,0 +1,9 @@
+ Tiger
+ Elephant
+ Gun
+ Deer
+ Knife
+ Fight
+ No detection
+ Walking
+ Running

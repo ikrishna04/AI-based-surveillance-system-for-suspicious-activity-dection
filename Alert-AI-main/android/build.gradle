@@ -1,0 +1,42 @@
+buildscript {
+    ext {
+        // Add the Kotlin version here
+        kotlin_version = '1.8.0'  // You can use a version appropriate for your setup
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.3.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Use the version defined above
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+        afterEvaluate { project ->
+            if (project.hasProperty('android')) {
+                project.android {
+                    if (namespace == null) {
+                        namespace project.group
+                    }
+                }
+            }
+        }
+    }
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

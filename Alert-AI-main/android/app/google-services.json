@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563996206260",
+    "project_id": "alert-ai-8bbee",
+    "storage_bucket": "alert-ai-8bbee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563996206260:android:eb13778f1fe31e3b31a3e1",
+        "android_client_info": {
+          "package_name": "com.example.image_recognize"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq-wIcOAfnumixvDxPJCjwAZlA0nIsL4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+0 Running
+1 Elephant
+2 Fight
+3 Gun
+4 Walking
+5 Tiger
+6 Knife
+7 Deer
